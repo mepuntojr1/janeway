@@ -159,6 +159,9 @@ class ToAddress(models.Model):
     def __str__(self):
         return self.email
 
+    class Meta:
+        verbose_name_plural = 'to addresses'
+
 
 class Version(models.Model):
     number = models.CharField(max_length=10)
