@@ -1182,6 +1182,9 @@ class Notifications(models.Model):
     def __str__(self):
         return '{0}, {1}: {2}'.format(self.journal, self.user, self.domain)
 
+    class Meta:
+        verbose_name_plural = 'notifications'
+
 
 # Signals
 
